@@ -8,7 +8,7 @@ import time
 class E_utility:
 
     def __init__(self):
-        self.sleep_minute = .2
+        self.sleep_minute = .01
         self.base_url_esearch = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?"
         self.base_url_efetch = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?"
         self.output_file_path = r"files/"
@@ -43,4 +43,6 @@ class E_utility:
 
 
 util = E_utility()
-util.Search("Johns+Hopkins[ad]+heart[ti]+2020/12/1:2020/12/31[dp]")
+util.Search("Thyroid%5BMeSH+Terms%5D")
+
+# util.Search("Johns+Hopkins[ad]+heart[ti]+2020/12/1:2020/12/31[dp]")
