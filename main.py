@@ -8,8 +8,8 @@ class E_utility:
     def __init__(self):
         self.sleep_minute = .2
         self.base_url_esearch = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?"
-        self.base_url_efetch = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetcg.fcgi?"
-        self.output_file_path = r"c:\\pubmed_xml_files\\"
+        self.base_url_efetch = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?"
+        self.output_file_path = r"files"
 
     def Search(self, search_term):
         url = self.base_url_esearch + 'db=pubmed&term=' + \
